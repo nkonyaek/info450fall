@@ -1,13 +1,16 @@
+
+# Problem 1
+
 a = [(2,5), (1,2), (4,4), (2,3), (2,1)]
 a.sort(reverse=True)
 print(a)
 
 
 
-def printValues():
-	l = list()
-	for i in range(1,30):
-		l.append(i**2)
-	print(l)
-		
-printValues()
+# Problem 2
+
+list1 = []     
+for i in range(1,31):
+    list1.append(i ** 2)
+print(list1[:6])
+
