@@ -10,5 +10,8 @@ for item in x:
     else:
         input_dict[item] += 1
 
-print(input_text)
-print(f"The number of times each word appears is: {input_dict}") # Output the number of each word
+print(input_text) # Print original list of words
+
+print("The number of times each word appears is: ")
+for word, count in input_dict.items():
+    print(f"{word}: {count}") # Output the number of each word
