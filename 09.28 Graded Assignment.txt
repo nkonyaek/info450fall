@@ -28,15 +28,17 @@ while program_active:
         # Program checks to see if any facts are entered. If the list of facts is not empty, they are stored in the dictionary.
         if len(facts) > 0:                          
               responses_dict[state] = facts
-
+        else:
+              print(f"You have not entered any facts about {state}.")
+         
         # Prompts if user wants to add any more states or facts.
-        repeat = input("Would you like to add another state or fact? Type y to continue. Type q for quit if you wish to stop: ")
+        repeat = input("Would you like to add a new state or fact? Press any key to continue. Type q for quit if you wish to stop: ")
         if repeat == 'q':
               program_active = False
 
-
-# The loop has ended. Print back the states and facts.
+# The loop has ended. Print back the states and facts. 
 print("\n--- State & Facts Questionnaire Results ---")
 for state, fact in responses_dict.items():
-       print(f"Fact(s) about the state of {state} are:")
-       print(*fact, sep = "\n")
+ if len(facts) > 0:
+  print(f"Fact(s) about the state of {state} are:")
+  print(*fact, sep = "\n")
