@@ -1,0 +1,5 @@
+100 Jones 24.98
+200 Doe 345.67
+300 Williamson 0.00
+400 Stone -242.16
+500 RIch 224.82
