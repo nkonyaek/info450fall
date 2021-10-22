@@ -42,7 +42,7 @@ findMinimum(listA)
 
 
 def reverseString(s):
-    if s == "":
+    if len(s) <= 1:
         return s
     else:
         return reverseString(s[1:]) + s[0] 
