@@ -37,7 +37,7 @@ findMinimum(listA)
 """
 
 
-
+"""
 # Problem 3
 
 
@@ -50,3 +50,19 @@ def reverseString(s):
 
 input_string = "python"
 reverseString(input_string)
+
+
+"""
+
+# Problem 4
+
+def palindrome(string):
+    if len(string) <=1:
+        return True
+    elif string[0] != string[-1]:
+        return False
+    else: 
+        reversed(string) == (string)
+        return ("Is a palindrome")
+
+palindrome('Kite')
